@@ -1,0 +1,375 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PcCtrl.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PcCtrl.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 PcCtrl"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PcCtrl 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2019/5/13/01",IDC_STATIC,40,25,127,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PCCTRL_DIALOG DIALOGEX 0, 0, 382, 361
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PcCtrl"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "CAN",IDC_RADIO_CI_CAN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,7,44,25,9
+    CONTROL         "COM",IDC_RADIO_CI_COM,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,7,27,25,9
+    CONTROL         "UDP",IDC_RADIO_CI_UDP,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,7,10,25,9
+    COMBOBOX        IDC_COMBO_COM,51,25,85,89,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "打开",IDC_BUTTON_COM_OC,140,26,46,29
+    PUSHBUTTON      "开始升级",IDC_BUTTON_UPGRADE,262,26,46,29
+    PUSHBUTTON      "读取版本",IDC_BUTTON_GETVER,140,67,46,14
+    PUSHBUTTON      "打开DBG",IDC_BUTTON_CONSOLE,197,26,46,29
+    PUSHBUTTON      "同步时间",IDC_BTN_SYNCDATETIME,197,67,38,14
+    EDITTEXT        IDC_EDIT_ZHOUQI,7,84,76,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "写周期",IDC_BTN_SETZHOUQI,89,84,46,14
+    PUSHBUTTON      "读周期",IDC_BTN_GETZHOUQI,140,84,46,14
+    EDITTEXT        IDC_EDIT_WENDUMENXAINGSHAGN,240,220,39,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "写温度门限",IDC_BTN_SETWENDUMENXIAN,281,220,46,14
+    PUSHBUTTON      "读温度门限",IDC_BTN_GETWENDUMENXIAN,329,220,46,14
+    EDITTEXT        IDC_EDIT_WENDUMENGXIANXIA,197,220,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHIDUMENXAINGSHAGN,239,237,39,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "写湿度门限",IDC_BTN_SETSHIDUMENXIAN,281,237,46,14
+    PUSHBUTTON      "读湿度门限",IDC_BTN_GETSHIDUMENXIAN,329,237,46,14
+    EDITTEXT        IDC_EDIT_SHIDUMENGXIANXIA,197,237,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YALIMENXAINGSHAGN,239,254,39,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "写压力门限",IDC_BTN_SETYALIMENXIAN,281,254,46,14
+    PUSHBUTTON      "读压力门限",IDC_BTN_GETYALIMENXIAN,329,254,46,14
+    EDITTEXT        IDC_EDIT_YALIMENGXIANXIA,197,254,38,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "写振动门限",IDC_BTN_SETZHENDONGMENXIAN,89,101,46,14
+    PUSHBUTTON      "读振动门限",IDC_BTN_GETZHENDONGMENXIAN,140,101,46,14
+    EDITTEXT        IDC_EDIT_ZHENDONGMENGXIANXIA,7,101,76,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "历史温湿压擦除",IDC_BTN_DELWSYRECORD,281,67,94,14
+    PUSHBUTTON      "历史振动擦除",IDC_BTN_DELZHENDONGRECORD,281,84,94,14
+    EDITTEXT        IDC_EDIT_DANNUMBER,7,118,76,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "写弹号",IDC_BTN_SETDANNUMBER,89,118,46,14
+    PUSHBUTTON      "读弹号",IDC_BTN_GETDANNUMBER,140,118,46,14
+    EDITTEXT        IDC_EDIT_BANDNUMBER,7,135,76,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "写箱号",IDC_BTN_SETBANDNUMBER,89,135,46,14
+    PUSHBUTTON      "读箱号",IDC_BTN_GETBANDNUMBER,140,135,46,14
+    EDITTEXT        IDC_EDIT_PANID,7,169,76,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "写PANID",IDC_BTN_SETPANID,89,169,46,14
+    EDITTEXT        IDC_EDIT_SETBOARDCAST,7,186,76,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "写信道",IDC_BTN_SETBOARDCAST,89,186,46,14
+    PUSHBUTTON      "终止传输",IDC_BTN_STOP,281,169,94,14
+    PUSHBUTTON      "无线重启",IDC_BTN_REBOOTWIAPA,89,254,46,14
+    PUSHBUTTON      "贮存",IDC_BTN_SETSAVEMODE,37,237,46,14
+    PUSHBUTTON      "电池更换",IDC_BTN_BATTERYSWAP,37,254,46,14
+    PUSHBUTTON      "读取",IDC_BTN_GETSAVEMODE,140,237,46,14
+    EDITTEXT        IDC_EDIT_YALICALIRATION,7,220,76,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "压力校准",IDC_BTN_SETYALICALIRATION,89,220,46,14
+    PUSHBUTTON      "读取参数",IDC_BTN_GETPARAMETER,140,152,46,14
+    COMBOBOX        IDC_COMBO_WARNING,7,154,76,104,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询告警",IDC_BTN_QUERYWARNING,89,152,46,14
+    EDITTEXT        IDC_EDIT_HISTORY_WSY_START,197,118,81,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HISTORY_WSY_END,197,135,81,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "历史温湿压",IDC_BTN_HISTORY_WSY,281,135,94,14
+    EDITTEXT        IDC_EDIT_HISTORY_ZHENDONG_START,197,169,81,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HISTORY_ZHENDONG_END,197,186,81,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "历史振动",IDC_BTN_HISTORY_ZHENDONG,281,186,94,14
+    PUSHBUTTON      "实时采集",IDC_BTN_DOCOLLECTONCE,281,117,94,14
+    PUSHBUTTON      "非贮存",IDC_BTN_SETSAVEMODE_NO,89,237,46,14
+    EDITTEXT        IDC_EDIT_WSY_BU,197,152,81,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "历史温湿压补包",IDC_BTN_WSY_BU,281,152,94,14
+    EDITTEXT        IDC_EDIT_ZHENDONG_BU,197,203,81,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "历史振动补包",IDC_BTN_ZHENDONG_BU,281,203,94,14
+    COMBOBOX        IDC_COMBO_CANID,51,42,85,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_UDP_IP,51,7,58,14,ES_AUTOHSCROLL
+    LTEXT           "IP",IDC_STATIC,36,10,10,9
+    LTEXT           "Port",IDC_STATIC,117,10,19,9
+    EDITTEXT        IDC_EDIT_UDP_PORT,140,7,46,14,ES_AUTOHSCROLL
+    LTEXT           "设备长地址",IDC_STATIC,200,10,41,9
+    EDITTEXT        IDC_EDIT_DEVADDR,261,7,97,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "停止升级",IDC_BUTTON_STOP_UPGRADE,312,26,46,29
+    PUSHBUTTON      "设置版本",IDC_BUTTON_SETVER,89,67,46,14
+    PUSHBUTTON      "读取时间",IDC_BTN_GETDATETIME,240,67,38,14
+    PUSHBUTTON      "读PANID",IDC_BTN_GETPANID,140,169,46,14
+    PUSHBUTTON      "读信道",IDC_BTN_GETBOARDCAST,140,186,46,14
+    PUSHBUTTON      "MCU重启",IDC_BTN_REBOOTMCU,140,254,46,14
+    PUSHBUTTON      "温度校准",IDC_BTN_SETTEMPCALIRATION,140,220,46,14
+    EDITTEXT        IDC_EDIT_HWVERSION,7,67,76,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "!初始化!",IDC_BTN_SYSRESET,240,84,38,14
+    EDITTEXT        IDC_EDIT_ADDRESS,7,203,76,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "写长地址",IDC_BTN_SETADDRESS,89,203,46,14
+    PUSHBUTTON      "读长地址",IDC_BTN_GETADDRESS,140,203,46,14
+    EDITTEXT        IDC_STATIC_MSG,7,271,368,89,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | NOT 
+                    WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "振动校准",IDC_BTN_ZHENDONGCA,197,84,38,14
+    EDITTEXT        IDC_EDIT_WAITCMDTIME,197,101,81,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "写等待时间",IDC_BTN_SETWAITTIME,281,101,46,14
+    PUSHBUTTON      "读等待时间",IDC_BTN_GETWAITTIME,329,101,46,14
+END
+
+IDD_DLG_TEST DIALOG DISCARDABLE  0, 0, 256, 199
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "测试"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "系统初始化",IDC_BTN_SYSTEMRESET,77,7,54,14
+    EDITTEXT        IDC_EDIT_HWVER,7,28,66,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置硬件版本",IDC_BTN_HWVER,77,27,54,14
+    PUSHBUTTON      "读取时间",IDC_BTN_READTIME,77,47,54,14
+    PUSHBUTTON      "设备重启",IDC_BTN_REBOOT,77,67,54,14
+    PUSHBUTTON      "温度校准",IDC_BTN_TEMPAC,77,87,54,14
+END
+
+IDD_DLG_CFG_TEMP DIALOG DISCARDABLE  0, 0, 187, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置校准值"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "设置",IDOK,130,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,24,50,14
+    LTEXT           "(温度*10)-PT100+500",IDC_STATIC,13,49,151,
+                    10
+    EDITTEXT        IDC_EDIT1_TEMP,15,65,96,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PcCtrl Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PcCtrl\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2019\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PcCtrl.EXE\0"
+            VALUE "ProductName", "PcCtrl 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PCCTRL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 375
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 354
+    END
+
+    IDD_DLG_TEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_DLG_CFG_TEMP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PCCTRL_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_WARNING, 0x403, 7, 0
+0xc2ce, 0xc8b6, 0xcfc9, "\000" 
+    IDC_COMBO_WARNING, 0x403, 13, 0
+0xc2ce, 0xc8b6, 0xc2cf, 0xdecf, 0xe6b8, 0xafbe, "\000" 
+    IDC_COMBO_WARNING, 0x403, 7, 0
+0xaaca, 0xc8b6, 0xcfc9, "\000" 
+    IDC_COMBO_WARNING, 0x403, 13, 0
+0xaaca, 0xc8b6, 0xc2cf, 0xdecf, 0xe6b8, 0xafbe, "\000" 
+    IDC_COMBO_WARNING, 0x403, 7, 0
+0xb9d1, 0xa6c1, 0xcfc9, "\000" 
+    IDC_COMBO_WARNING, 0x403, 13, 0
+0xb9d1, 0xa6c1, 0xc2cf, 0xdecf, 0xe6b8, 0xafbe, "\000" 
+    IDC_COMBO_WARNING, 0x403, 9, 0
+0xeeb2, 0xb9d1, 0xe6b8, 0xafbe, "\000" 
+    IDC_COMBO_WARNING, 0x403, 11, 0
+0xe7b5, 0xbfc1, 0xcdb5, 0xe6b8, 0xafbe, "\000" 
+    IDC_COMBO_WARNING, 0x403, 13, 0
+0xf1d5, 0xafb6, 0xcfc9, 0xdecf, 0xe6b8, 0xafbe, "\000" 
+    IDC_COMBO_CANID, 0x403, 16, 0
+0x7830, 0x3130, 0x3120, 0xbc23, 0xb2e0, 0xc4e2, 0xbfa3, 0x00e9, 
+    IDC_COMBO_CANID, 0x403, 16, 0
+0x7830, 0x3230, 0x3220, 0xbc23, 0xb2e0, 0xc4e2, 0xbfa3, 0x00e9, 
+    IDC_COMBO_CANID, 0x403, 12, 0
+0x7830, 0x3430, 0x2820, 0xa4d4, 0xf4c1, 0x0029, 
+    IDC_COMBO_CANID, 0x403, 12, 0
+0x7830, 0x3131, 0x2820, 0xa4d4, 0xf4c1, 0x0029, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 PcCtrl(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PcCtrl.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
