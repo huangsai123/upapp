@@ -6,23 +6,23 @@
 --------------------Configuration: PcCtrl - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating command line "rc.exe /l 0x804 /fo"Release/PcCtrl.res" /d "NDEBUG" /d "_AFXDLL" "C:\资料\黄赛\彭工最新版\上位机源码\PcCtrl\PcCtrl.rc"" 
-Creating temporary file "C:\Users\zzy\AppData\Local\Temp\RSP61FF.tmp" with contents
+Creating command line "rc.exe /l 0x804 /fo"Release/PcCtrl.res" /d "NDEBUG" /d "_AFXDLL" "C:\资料\黄赛\51正式版修改版\MFC测试工具\上位机源码\PcCtrl\PcCtrl.rc"" 
+Creating temporary file "C:\Users\zzy\AppData\Local\Temp\RSPDB16.tmp" with contents
 [
 /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/PcCtrl.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
-"C:\资料\黄赛\彭工最新版\上位机源码\PcCtrl\PcCtrl.cpp"
-"C:\资料\黄赛\彭工最新版\上位机源码\PcCtrl\PcCtrlDlg.cpp"
-"C:\资料\黄赛\彭工最新版\上位机源码\PcCtrl\SetACTemp.cpp"
-"C:\资料\黄赛\彭工最新版\上位机源码\PcCtrl\Uart.cpp"
+"C:\资料\黄赛\51正式版修改版\MFC测试工具\上位机源码\PcCtrl\PcCtrl.cpp"
+"C:\资料\黄赛\51正式版修改版\MFC测试工具\上位机源码\PcCtrl\PcCtrlDlg.cpp"
+"C:\资料\黄赛\51正式版修改版\MFC测试工具\上位机源码\PcCtrl\SetACTemp.cpp"
+"C:\资料\黄赛\51正式版修改版\MFC测试工具\上位机源码\PcCtrl\Uart.cpp"
 ]
-Creating command line "cl.exe @C:\Users\zzy\AppData\Local\Temp\RSP61FF.tmp" 
-Creating temporary file "C:\Users\zzy\AppData\Local\Temp\RSP6200.tmp" with contents
+Creating command line "cl.exe @C:\Users\zzy\AppData\Local\Temp\RSPDB16.tmp" 
+Creating temporary file "C:\Users\zzy\AppData\Local\Temp\RSPDB17.tmp" with contents
 [
 /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/PcCtrl.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
-"C:\资料\黄赛\彭工最新版\上位机源码\PcCtrl\StdAfx.cpp"
+"C:\资料\黄赛\51正式版修改版\MFC测试工具\上位机源码\PcCtrl\StdAfx.cpp"
 ]
-Creating command line "cl.exe @C:\Users\zzy\AppData\Local\Temp\RSP6200.tmp" 
-Creating temporary file "C:\Users\zzy\AppData\Local\Temp\RSP6211.tmp" with contents
+Creating command line "cl.exe @C:\Users\zzy\AppData\Local\Temp\RSPDB17.tmp" 
+Creating temporary file "C:\Users\zzy\AppData\Local\Temp\RSPDB18.tmp" with contents
 [
 /nologo /subsystem:windows /incremental:no /pdb:"Release/PcCtrl.pdb" /machine:I386 /out:"Release/PcCtrl.exe" 
 ".\Release\PcCtrl.obj"
@@ -32,7 +32,54 @@ Creating temporary file "C:\Users\zzy\AppData\Local\Temp\RSP6211.tmp" with conte
 ".\Release\Uart.obj"
 ".\Release\PcCtrl.res"
 ]
-Creating command line "link.exe @C:\Users\zzy\AppData\Local\Temp\RSP6211.tmp"
+Creating command line "link.exe @C:\Users\zzy\AppData\Local\Temp\RSPDB18.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+PcCtrl.cpp
+PcCtrlDlg.cpp
+SetACTemp.cpp
+Uart.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+PcCtrl.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: PcCtrl - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/PcCtrl.res" /d "_DEBUG" /d "_AFXDLL" "C:\资料\黄赛\51正式版修改版\MFC测试工具\上位机源码\PcCtrl\PcCtrl.rc"" 
+Creating temporary file "C:\Users\zzy\AppData\Local\Temp\RSPDF9E.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/PcCtrl.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\资料\黄赛\51正式版修改版\MFC测试工具\上位机源码\PcCtrl\PcCtrl.cpp"
+"C:\资料\黄赛\51正式版修改版\MFC测试工具\上位机源码\PcCtrl\PcCtrlDlg.cpp"
+"C:\资料\黄赛\51正式版修改版\MFC测试工具\上位机源码\PcCtrl\SetACTemp.cpp"
+"C:\资料\黄赛\51正式版修改版\MFC测试工具\上位机源码\PcCtrl\Uart.cpp"
+]
+Creating command line "cl.exe @C:\Users\zzy\AppData\Local\Temp\RSPDF9E.tmp" 
+Creating temporary file "C:\Users\zzy\AppData\Local\Temp\RSPDF9F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/PcCtrl.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\资料\黄赛\51正式版修改版\MFC测试工具\上位机源码\PcCtrl\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\zzy\AppData\Local\Temp\RSPDF9F.tmp" 
+Creating temporary file "C:\Users\zzy\AppData\Local\Temp\RSPDFA0.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/PcCtrl.pdb" /debug /machine:I386 /out:"Debug/PcCtrl.exe" /pdbtype:sept 
+".\Debug\PcCtrl.obj"
+".\Debug\PcCtrlDlg.obj"
+".\Debug\SetACTemp.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Uart.obj"
+".\Debug\PcCtrl.res"
+]
+Creating command line "link.exe @C:\Users\zzy\AppData\Local\Temp\RSPDFA0.tmp"
 <h3>Output Window</h3>
 Compiling resources...
 Compiling...
